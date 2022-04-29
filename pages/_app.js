@@ -1,6 +1,16 @@
 // pages/_app.js
-// import '../styles.css'
-
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import App from "next/app";
+import "../styles/base.scss";
+import MainLayout from "../components/layout/main";
+class MyApp extends App {
+	render() {
+		const { Component, pageProps } = this.props;
+		return (
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    );
+	}
 }
+
+export default MyApp;

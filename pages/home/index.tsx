@@ -1,11 +1,14 @@
 import Head from "next/head";
 import style from './index.module.scss'
+import Header from "../../components/header";
+
 
 export default function Home() {
+
 	return (
 		<div className={style.container}>
 			<Head>
-				<title>Create Next App</title>
+				<title>Mylo</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
