@@ -13,22 +13,30 @@
 		cursor: default;
 		user-select: none;
 	}
-	.list {
-		display: flex;
-		li {
-			a {
-				border-bottom-width: 2px;
-				border-bottom-style: solid;
-				border-bottom-color: transparent;
+}
+.list {
+	display: flex;
+	li {
+		color: darkcyan;
+		a {
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			border-bottom-color: transparent;
 
-				&:hover {
-					border-bottom-color: #fff;
-				}
+			&:hover {
+				font-weight: 700;
 			}
+		}
 
-			&:not(:last-child) {
-				margin-right: 2rem;
-			}
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	.active {
+		color: #fff;
+		a {
+			font-weight: 700;
 		}
 	}
 }

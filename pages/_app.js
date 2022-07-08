@@ -1,16 +1,17 @@
 // pages/_app.js
-import App from "next/app";
-import "../styles/base.scss";
-import MainLayout from "../components/layout/main";
+import App from "next/app"
+import "../styles/base.scss"
+import MainLayout from "../components/layout/main"
 class MyApp extends App {
 	render() {
-		const { Component, pageProps } = this.props;
+		const { Component, pageProps } = this.props
+
 		return (
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    );
+			<MainLayout>
+				<Component {...pageProps} />
+			</MainLayout>
+		)
 	}
 }
 
-export default MyApp;
+export default MyApp

@@ -1,19 +1,31 @@
 import Head from "next/head";
 import style from './index.module.scss'
-import Header from "../../components/header";
-
 
 export default function Home() {
 
+	const style: Style = {
+		container: {
+			margin: '0 auto',
+			height: '600px',
+			display: 'flex',
+			flexDirection: 'column',
+			background: '#fafafa',
+		},
+
+		title: {
+			color: 'forestgreen'
+		}
+	}
+
 	return (
-		<div className={style.container}>
+		<div style={style.container}>
 			<Head>
 				<title>Mylo</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<main>
-				<h1 className={style.title}>
+				<h1 style={style.title}>
 					Welcome to <a href="https://flyingmylo.com">flyingmylo</a>
 				</h1>
 			</main>
@@ -24,4 +36,9 @@ export default function Home() {
 
 		</div>
 	);
+
+	type Style = {
+		container: object
+		title: object
+	}
 }
