@@ -11,7 +11,7 @@ export const deepCopy = (obj: object) => {
   })
   return temp
 }
-console.log('test-1')
+console.log('test')
 export const isObject = (obj: object) => {
   return obj && Object.prototype.toString.call(obj) === '[object Object]'
 }
