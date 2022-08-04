@@ -1,26 +1,25 @@
-import Head from "next/head";
-import style from './index.module.scss'
+import Head from "next/head"
+import { isObject, deepCopy } from "../utils"
 
 export default function Home() {
-
 	const style: Style = {
 		container: {
-			margin: '0 auto',
-			height: '600px',
-			display: 'flex',
-			flexDirection: 'column',
-			background: '#fafafa',
+			margin: "0 auto",
+			height: "600px",
+			display: "flex",
+			flexDirection: "column",
+			background: "#fafafa",
 		},
 
 		title: {
-			color: 'forestgreen'
-		}
+			color: "forestgreen",
+		},
 	}
 
 	return (
 		<div style={style.container}>
 			<Head>
-				<title>Mylo</title>
+				<title>hi</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -30,12 +29,9 @@ export default function Home() {
 				</h1>
 			</main>
 
-			<footer>
-
-			</footer>
-
+			<footer></footer>
 		</div>
-	);
+	)
 
 	type Style = {
 		container: object
