@@ -11,7 +11,8 @@ export const deepCopy = (obj: object) => {
   })
   return temp
 }
-console.log('test')
+console.log('我是分支 ----> copy-main ')
+console.log('我是分支 ----> devvvv')
 export const isObject = (obj: object) => {
   return obj && Object.prototype.toString.call(obj) === '[object Object]'
 }
