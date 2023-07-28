@@ -21,8 +21,6 @@ const Wrapper = styled.section`
 
 // Use them like any other React component – except they're styled!
 
-
-console.log(Title)
 export default function Home() {
 	const style: Style = {
 		container: {

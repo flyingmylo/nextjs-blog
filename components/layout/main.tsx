@@ -1,8 +1,9 @@
+import React from "react";
 import Header from "../header";
-import style from "./main.module.scss";
+
 
 const MainLayout = ({ children }) => (
-  <div className={style.container}>
+  <div >
     <Header />
 
     <div className="content-wrapper">{children}</div>

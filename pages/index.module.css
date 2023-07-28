@@ -6,7 +6,7 @@
 	flex-direction: column;
 	background: #fafafa;
 
-	.title {
-		color: forestgreen;
-	}
+}
+.title {
+  color: forestgreen;
 }

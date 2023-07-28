@@ -1,6 +1,9 @@
 import Link from 'next/link';
-import style from './index.module.scss'
+// import style from './index.module.scss'
+import { StyledHeader } from './styles'
+
 import { useRouter } from 'next/router'
+import React from 'react';
 
 
 export default function Header() {
@@ -21,21 +24,21 @@ export default function Header() {
     }
   ]
   return (
-    <header className={style.header}>
-      <h1 className={style.logo}>
+    <StyledHeader >
+      <h1 className="logo">
         <Link href="/">hi</Link>
       </h1>
-      <ul className={style.list}>
+      <ul className="list">
         {
           nav.map(n => (
-            <li key={n.path} className={pathname === n.path ? style.active : ''}>
+            <li key={n.path} className={pathname === n.path ? 'active' : ''}>
               <Link href={n.path}>{n.label}</Link>
             </li>
           ))
         }
 
       </ul>
-    </header>
+    </StyledHeader>
   )
 
 }
